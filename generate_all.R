@@ -4,7 +4,8 @@ source("plot2.R")
 source("plot3.R")
 source("plot4.R")
 
-#Generates all four plots by calling generate_all_plots
+#Generates all four plots by calling this function.
+#png = TRUE renders them out as png, otherwise they are drawn to the default device
 generate_all_plots <- function(png = TRUE) {
         #Set locale to english so date labels are correct
         Sys.setlocale(category = "LC_ALL", locale = "english")
