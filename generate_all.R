@@ -1,6 +1,8 @@
 source("util.R")
 source("plot1.R")
 source("plot2.R")
+source("plot3.R")
+source("plot4.R")
 
 #Generates all four plots by calling generate_all_plots
 generate_all_plots <- function(png = TRUE) {
@@ -9,4 +11,6 @@ generate_all_plots <- function(png = TRUE) {
         data <- get_data()
         generate_plot_1(data,png)
         generate_plot_2(data,png)
+        generate_plot_3(data,png)
+        generate_plot_4(data,png)
 }

@@ -12,7 +12,7 @@ source("plot3.R")
 generate_plot_4 <- generate_plot_function("4", draw_plot_4)
 
 draw_plot_4 <- function(data) {
-        par(mfcol=c(2,2),mar=c(4,4,1,2))
+        par(mfcol=c(2,2))
         draw_plot_2(data)
         draw_plot_3(data)
         draw_plot_4_3(data)
